@@ -10,7 +10,7 @@ import org.apache.commons.text.StringEscapeUtils
 /**
  * request encoder verticle for dotnet webservice
  */
-class DotnetwsReqVerticle : ReqEncoderVerticle(), AutoDeployVerticle {
+open class DotnetwsReqVerticle : ReqEncoderVerticle(), AutoDeployVerticle {
 
   override fun encodeReq(httpMethod: HttpMethod, path: String, params: JsonObject): JsonObject {
     val reqBodyName = path.split("/").last()

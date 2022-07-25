@@ -7,7 +7,7 @@ import io.vertx.core.buffer.Buffer
 import io.vertx.ext.web.client.HttpResponse
 import org.slf4j.LoggerFactory
 
-class DotnetwsResVerticle : WebClientVerticle() {
+open class DotnetwsResVerticle : WebClientVerticle() {
   companion object {
     private const val soapBodyPrefix = "<soap:Body>"
     private const val soapBodySuffix = "</soap:Body>"
